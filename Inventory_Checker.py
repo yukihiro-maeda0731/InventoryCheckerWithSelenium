@@ -13,7 +13,12 @@ link.click()
 
 try:
     element = WebDriverWait(driver,10).until(
-        EC.presence_of_element_located((By.LINK_TEXT,"Beginner Python Tutorial"))
+        EC.presence_of_element_located((By.LINK_TEXT,"Beginner Python Tutorials"))
+    )
+    element.click()
+
+    element = WebDriverWait(driver,10).until(
+        EC.presence_of_element_located((By.ID,"sow-button-19310003"))
     )
     element.click()
 except:
